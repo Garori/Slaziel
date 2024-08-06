@@ -10,3 +10,6 @@ body *{
     align-items: flex-start;
     justify-content: center;
 }
+.floatleft{
+    float: left;
+}
