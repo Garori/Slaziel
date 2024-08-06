@@ -1,7 +1,12 @@
 body{
-    background-color: black;
+    background-color: gray;
+    
 }
 body *{
-    color: greenyellow;
-    text-align: center;
+    color: black;
+}
+.principal{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
