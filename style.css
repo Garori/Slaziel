@@ -1,28 +1,53 @@
 body {
-    background-color: gray;
-
+    background-color: darkgray;
+    background-image: url("./bg2.png");
+    background-size: cover;
+    padding: 0vw 10vw;
 }
 
 body * {
     color: black;
 }
 
+body h3 {
+    color: darkgreen;
+}
+
+main {
+    margin-top: 5vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+p,
+a {
+    padding-left: 15px;
+}
+
 .principal {
     padding-top: 5vh;
     ;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: auto auto auto auto; */
+    width: 100%;
 }
 
-.floatleft {
-    grid-column-start: 6;
-    grid-column-end: 6;
+.card,
+.principalChild:not(.card)>* {
+    border-radius: 5px;
+    background-color: #ffffffcc;
+    padding: 15px;
 }
 
-.floatright {
-    grid-column-start: 2;
-    grid-column-end: 4;
+.principalChild {
+    min-width: 40%;
 }
+
+/* .principalChild > *{
+    .card
+} */
 
 .itchdiv {
     display: flex;
@@ -33,4 +58,17 @@ body * {
 
 .itchdiv>* {
     margin-top: 1vh;
+}
+
+.foto_slaziel {
+    background-image: url("./slaziel2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 8vw;
+    height: 10vw;
+    /* margin-right: 25vw; */
+    /* float: right; */
+    /* transform: translate(-25vw,0px); */
+
 }
